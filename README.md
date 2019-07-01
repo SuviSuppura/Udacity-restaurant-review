@@ -2,6 +2,22 @@
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
+## My additions
+
+I have used several youtube videos, blogs and other sources in this learning process and creating the prject. Here is some of them:
+Service workers:
+https://developers.google.com/web/fundamentals/codelabs/offline/
+
+Several items:
+Youtube Project 1 MWS Webinar with Doug Brown
+https://www.youtube.com/watch?v=92dtrNU1GQc
+
+Responsive images:
+MWS Restaurant Reviews Project
+A Walkthrough by Alexandro Perez
+https://alexandroperez.github.io/mws-walkthrough/?1.15.responsive-images
+
+
 ## Project Overview: Stage 1
 
 For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
