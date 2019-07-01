@@ -80,8 +80,6 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 	margin: 20px;
-
-
 }
 #breadcrumb {
     padding: 10px 40px 16px;
@@ -296,6 +294,7 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
+
 #restaurant-hours td {
   color: #666;
 }

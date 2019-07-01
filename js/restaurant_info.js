@@ -82,14 +82,23 @@ fetchRestaurantFromURL = (callback) => {
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
+  const li = document.createElement('li');
+
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  const imgurlbase = DBHelper.imageUrlForRestaurant(restaurant);
+  const imgparts = imgurlbase.split('.');
+  const imgurl300 = imgparts[0] + '_300.' + imgparts[1];
+  const imgurl600 = imgparts[0] + '_600.' + imgparts[1];
+  image.src = imgurlbase;
+  image.srcset = `${imgurl300} 300w, ${imgurl600} 600w`;
+  image.sizes = `(max-width: 400px) 300px, (max-width: 600px) 600px`;
   image.setAttribute('alt', `${restaurant.name} (${restaurant.neighborhood})`);
+  li.append(image);
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
